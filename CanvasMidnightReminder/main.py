@@ -18,7 +18,7 @@ canvas = Canvas(API_URL, API_TOKEN)
 
 # Get the list of courses
 def get_courses():
-    """Fetch all courses the user is enrolled in."""
+    # Fetch all courses the user is enrolled in
     courses = canvas.get_courses(enrollment_state='active')
     return courses
 
